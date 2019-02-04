@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy/>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.lang.Comparable"/>
+    <fullyQualifiedTypeName name="DS_MadanRaj"/>
+    <fullyQualifiedTypeName name="DS_Niveditha"/>
+    <fullyQualifiedTypeName name="DS_Roshan"/>
+    <fullyQualifiedTypeName name="DS_Sapan"/>
+    <fullyQualifiedTypeName name="DS_Varun"/>
+    <fullyQualifiedTypeName name="DS_Vibhor"/>
+    <fullyQualifiedTypeName name="TestDS_Yash"/>
+</qualifiedTypeNameHistroy>
