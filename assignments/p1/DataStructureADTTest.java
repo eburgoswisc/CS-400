@@ -63,6 +63,7 @@ abstract class DataStructureADTTest<T extends DataStructureADT<String,String>> {
 	@Test
 	void test03_duplicate_exception_is_thrown() {
 		dataStructureInstance.insert("Key1", "Value1");
+		
 		try {
 			dataStructureInstance.insert("Key1", "Value1");
 		} catch (RuntimeException e) {} // Do nothing if passes
@@ -75,6 +76,25 @@ abstract class DataStructureADTTest<T extends DataStructureADT<String,String>> {
 		
 		if (dataStructureInstance.remove("Not here")) {
 			fail("Remove method did not return false when key not present");
+		}
+	}
+	
+	@Test
+	void test05_insert_null_catch_exception() {
+		
+		try {
+			dataStructureInstance.insert(null, "not here");
+			fail("IllegalArgumentException (null key) was not thrown");
+		} catch (IllegalArgumentException e) {
+			//do nothing
+		}
+		
+	}
+	
+	@Test 
+	void test06_insert_over_capacity() {
+		for (int i = 0; i < 1000; i++) {
+			dataStructureInstance.insert(Integer.toString(i), "something");
 		}
 	}
 
