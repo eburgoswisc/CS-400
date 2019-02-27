@@ -14,6 +14,8 @@
     <fullyQualifiedTypeName name="java.lang.RuntimeException"/>
     <fullyQualifiedTypeName name="java.lang.Comparable"/>
     <fullyQualifiedTypeName name="BST"/>
-    <fullyQualifiedTypeName name="IllegalNullKeyException"/>
+    <fullyQualifiedTypeName name="BSTNode"/>
     <fullyQualifiedTypeName name="DuplicateKeyException"/>
+    <fullyQualifiedTypeName name="IllegalNullKeyException"/>
+    <fullyQualifiedTypeName name="KeyNotFoundException"/>
 </qualifiedTypeNameHistroy>

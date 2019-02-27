@@ -8,32 +8,32 @@
 // package level access means that all classes in the package can access directly.
 //
 // Classes that use this type:  <TODO, list which if any classes use this type>
-class BSTNode<K extends Comparable<K>, V> {
+class BSTNode<K,V> {
+	
+	K key;
+	V value;
+	BSTNode<K,V> left;
+	BSTNode<K,V> right;
+	int balanceFactor;
+	int height;
+	
 
-  K key;
-  V value;
-  BSTNode<K, V> left;
-  BSTNode<K, V> right;
-  int balanceFactor;
-  int height;
+	/**
+	 * @param key
+	 * @param value
+	 * @param leftChild
+	 * @param rightChild
+	 */
+	BSTNode(K key, V value, BSTNode<K,V>  leftChild, BSTNode<K,V> rightChild) {
+		this.key = key;
+		this.value = value;
+		this.left = leftChild;
+		this.right = rightChild;
+		this.height = 0;
+		this.balanceFactor = 0;
+	}
+	
+	BSTNode(K key, V value) { this(key,value,null,null); }
 
-  /**
-   * @param key
-   * @param value
-   * @param leftChild
-   * @param rightChild
-   */
-  BSTNode(K key, V value, BSTNode<K, V> leftChild, BSTNode<K, V> rightChild) {
-    this.key = key;
-    this.value = value;
-    this.left = leftChild;
-    this.right = rightChild;
-    this.height = 0;
-    this.balanceFactor = 0;
-  }
-
-  BSTNode(K key, V value) {
-    this(key, value, null, null);
-  }
-
+	
 }

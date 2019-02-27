@@ -1,4 +1,4 @@
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.fail;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -260,10 +260,10 @@ public class BSTTest extends DataStructureADTTest {
   }
 
   @Test
-	void testBST_011_check_contain_methods() {
-	  
-	  bst
-	}
+  void testBST_011_check_contain_methods() {
+
+    return;
+  }
 
   // Add tests to make sure that get and remove work as expected.
   // Does the height of the tree reflect it's actual and its expected height?
