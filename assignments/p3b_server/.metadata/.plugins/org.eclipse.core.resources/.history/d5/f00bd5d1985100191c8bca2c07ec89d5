@@ -1,0 +1,36 @@
+p3b CONCLUSIONS.TXT
+
+Complete p3b and answer the following questions using results of running
+Java Flight Recorder and Java Mission Control to justify your conclusions..
+
+1) What can you tell about the performance of your hash table implementation compared to Java's tree map? 
+Explain why (or when) your hash table is better or worse than Java's Tree Map.
+
+- My implementation of a hashtable which was using arraylists as buckets, performed better then Java's Tree Map.
+  By looking at which operation spent more time on execution, methods for insertion of treemap took way more time than my hashtable. 
+  Looking at which packages also took more time in execution, java.util which has treemap was twice as high as the default package that has hashtable. 
+
+2) What did you observe in java mission control to come to the conclusion above?
+
+- I observed the percentages which represent the proportion of the total time a method, class or package took in exectuing or performing operations.
+I noticed that insert operations for treemap spent more time than hashtable. In addition the class in general spent more time executing. In hot methods, treemap took over 50% of time to insert the objects.
+
+
+3) SCREENSHOT_001_MYPROFILER_CLASS.PNG NOTES: Briefly describe what this image 001 shows
+
+- Here I was looking at how much time was spent executing operations in classes. As you can see
+java.util.TreeMap took over 50% of time while HashTable took up to 27%. 
+
+4) SCREENSHOT002_MYPROFILER_METHODS.PNG NOTES: Briefly describe what this image 002 shows
+- Here I am looking at the methods time. TreeMap again took over 50% while hashtable took less than 16% including resizing operations.
+ 
+
+5) SCREENSHOT_003_HEAPSTATS_CLASSES.PNG
+
+- In this one, the same thing was observed however exception classes and other java operations were not reported. Again, Java.util which has treemap took in this case over 66% 
+while hashtable only took around 16%. INterestingly enough, it seems like most exceptions and underlying operations reported in my_profiler stats were under java.util. 
+
+6) SCREENSHOT004_HEAPSTATS_METHODS.PNG
+
+- Here treemap shows that its methods for insertion took over 41% while hashtable only took 8%. Keep in mind that one of my 
+Hashtable methods throws an exception which might increase the percentage and nu mber of methods that are called and are associated with my class.

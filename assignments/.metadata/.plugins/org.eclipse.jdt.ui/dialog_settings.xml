@@ -14,7 +14,7 @@
 	<item value="339" key="org.eclipse.jdt.uiformatter_page.last_focus_index"/>
 	<item value="716" key="org.eclipse.jdt.uiformatter_pagemodify_dialog.sash_form_rigth_width"/>
 	<item value="/Users/emanuelburgos/Dropbox/UW Classes/Comp Sci 400/assignments/p2" key="org.eclipse.jdt.ui.last.external.project"/>
-	<item value="1" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
+	<item value="2" key="org.eclipse.jdt.ui.last.selected.jre.kind2"/>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
 		<item value="true" key="group_libraries"/>
@@ -24,7 +24,7 @@
 	</section>
 	<section name="NewClassWizardPage">
 		<item value="false" key="create_constructor"/>
-		<item value="true" key="create_unimplemented"/>
+		<item value="false" key="create_unimplemented"/>
 	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item value="1" key="index"/>
